@@ -10,12 +10,6 @@
 // Heap
 
 template <typename T>
-Heap<T>::Heap(bool isMinHeap) : minHeap(isMinHeap) {  
-  // COMPLETE HERE
-  //Ya se inicializa el minheap en el constructor
-}
-
-template <typename T>
 void Heap<T>::insert(T const& element) {
   // COMPLETE HERE
   datos.push_back(element);
