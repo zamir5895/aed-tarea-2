@@ -19,8 +19,9 @@ automático, con el mismo prototipo mostrado en este archivo.
 template <typename T>
 struct Heap {
     bool minHeap;
+    std::vector<T> datos;
 
-    Heap(bool isMinHeap = true);
+    Heap(bool isMinHeap = true): minHeap(isMinHeap) {};
 
     void insert(T const& element);
 
@@ -33,6 +34,10 @@ struct Heap {
     bool isEmpty() const;
 
     void clear();
+private:
+    void heapifyUp(size_t index);
+
+    void heapifyDown(size_t index);
 };
 
 #include "hw2_impl.h"
