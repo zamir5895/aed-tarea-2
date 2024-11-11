@@ -12,6 +12,7 @@
 template <typename T>
 Heap<T>::Heap(bool isMinHeap) : minHeap(isMinHeap) {  
   // COMPLETE HERE
+  //Ya se inicializa el minheap en el constructor
 }
 
 template <typename T>
