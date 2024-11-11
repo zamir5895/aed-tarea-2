@@ -35,9 +35,9 @@ struct Heap {
 
     void clear();
 private:
-    void heapifyUp(size_t index);
+    void heapifyUp(size_t indice);
 
-    void heapifyDown(size_t index);
+    void heapifyDown(size_t indice);
 };
 
 #include "hw2_impl.h"
