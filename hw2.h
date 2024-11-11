@@ -1,6 +1,6 @@
 #ifndef HW2_H
 #define HW2_H
-
+#include <vector>
 /*******************************************************************************
 
 MODIFIQUE ESTE ARCHIVO Y LA CORRESPONDIENTE IMPLEMENTACIÓN A SU GUSTO.
