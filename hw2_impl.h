@@ -17,8 +17,8 @@ Heap<T>::Heap(bool isMinHeap) : minHeap(isMinHeap) {
 template <typename T>
 void Heap<T>::insert(T const& element) {
   // COMPLETE HERE
-  data.push_back(element);
-  heapifyUp(data.size() - 1);
+  datos.push_back(element);
+  heapifyUp(datos.size() - 1);
 }
 
 template <typename T>
@@ -84,7 +84,7 @@ void Heap<T>::heapifyDown(size_t indice){
     hijoIzquierdo = 2*indice + 1; 
     hijoDerecho = 2*indice + 2;
     target = indice;
-    if(hijjoIzquierdo < datos.sizr() && ((minHeap && datos[hijoIzquierdo] < datos[target]) || (!minHeap && datos[hijoIzquierdo] > datos[target]))){
+    if(hijoIzquierdo < datos.size() && ((minHeap && datos[hijoIzquierdo] < datos[target]) || (!minHeap && datos[hijoIzquierdo] > datos[target]))){
       target = hijoIzquierdo;
     }
     if(hijoDerecho < datos.size() && ((minHeap && datos[hijoDerecho] < datos[target]) || (!minHeap && datos[hijoDerecho] > datos[target]))){
